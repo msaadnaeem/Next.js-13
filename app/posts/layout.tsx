@@ -5,7 +5,11 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-const PostsLayout = ({ children }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const PostsLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <Grid item xs={12} md={6}>
